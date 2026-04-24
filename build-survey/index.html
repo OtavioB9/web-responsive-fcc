@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+ 
+
+  <body>
+    <h1 id="title"> Faça seu pedido de receita</h1>
+  <p id= "description"> Você poderá preencher este formulário e solicitar uma receita para o próximo menu. </p>
+  <form id = "survey-form"/>
+  
+  <div>
+    <label id="name-label" for="name"> Name (required): </label>
+     <input type ="text" id ="name" 
+     placeholder="João"
+     required>    
+     </div>
+
+     <div>
+     <label id ="email-label" for = "email"> Email (required): </label>     
+     <input type ="email" id ="email" 
+     placeholder="example@email.com"
+     required>
+     </div>
+
+    <div>
+     <label id = "number-label" for = "number"> Number (optional): </label>
+     <input type ="number" id ="number" min= "3"  max="100" 
+     placeholder="11 8298-92833"
+     required>
+    </div>
+   <div>
+  <p id ="Opções"> Faça sua escolha abaixo: </p>
+     <select name="dropdown" id="dropdown"> 
+     <option value = "espaguete"> Espaguete ao molho bolonhesa</option>
+     <option value = "carne"> Bife Ancho no alho e na manteiga</option>
+     <option value = "risoto"> Risoto de camarão com ervas</option>
+   </select>
+   </div> 
+
+ <p id="tipo"> Qual formato de video: </p>
+   <label>
+ <input name="user-recommend" value="30 min" type="radio" class="input-radio" checked=""> 30 Minutos
+</label>
+
+<label>
+ <input name="user-recommend" value="20 min" type="radio" class="input-radio"> 20 Minutos
+</label>
+
+<label>
+ <input name="user-recommend" value="10 min" type="radio" class="input-radio"> 10 Minutos
+</label>
+
+<label>
+<p id ="recomendação"> Em qual tipo de preparo o vídeo deve focar? </p>
+ <input name ="ingredientes" type ="checkbox" value ="ingr">  Ingredientes usados </label>
+
+  <input name ="preparo" type ="checkbox" value ="prep"> Preparo dos ingredientes </label>
+
+   <input name ="dica" type ="checkbox" value ="compras" > Dicas para comprar igredientes</label>
+
+</label>
+<p> Adicione alguma sugestão: </p>
+<textarea id="comments" class="input-textarea" name="comment" placeholder="Coloque o seu comentário aqui..."></textarea>
+</label>
+
+<button type="submit" id="submit" class="submit-button">
+            Submit
+          </button> 
+  </body>
+</html>
